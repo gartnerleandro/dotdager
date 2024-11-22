@@ -11,7 +11,7 @@ import "./ThemeSwitcher.css";
 const ThemeSwitcher = () => {
     const [mounted, setMounted] = useState(false);
     const { theme, setTheme } = useTheme();
-    usePointerGlow();
+    const [status] = usePointerGlow();
     
     useEffect(() => setMounted(true), []);
     

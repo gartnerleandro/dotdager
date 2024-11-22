@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface PointerGlowStatus {
   x: string;
@@ -10,13 +10,8 @@ interface PointerGlowStatus {
 
 export const usePointerGlow = () => {
   const [status, setStatus] = useState<PointerGlowStatus | null>(null);
-  const [mounted, setMounted] = useState(false);
 
-  useEffect(() => setMounted(true), []);
-    
-  if (!mounted) return [status];
-
-  React.useEffect(() => {
+  useEffect(() => {
     function syncPointer({ x: pointerX, y: pointerY }: { x: number, y: number }): void {
       const x = pointerX.toFixed(2);
       const y = pointerY.toFixed(2);

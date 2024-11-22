@@ -5,12 +5,7 @@ import { ArrowUp } from "lucide-react";
 import "./ScrollToTop.css";
 
 export default function ScrollToTop() {
-    const [withScroll, setWithScroll] = React.useState(false);
-    const [mounted, setMounted] = useState(false);
-    
-    useEffect(() => setMounted(true), []);
-    
-    if (!mounted) return null;
+    const [withScroll, setWithScroll] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
