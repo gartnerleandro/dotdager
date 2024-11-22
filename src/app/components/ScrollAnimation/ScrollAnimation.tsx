@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 
 import LottieComponent from "../Lottie/Lottie";
+import animationData from "@/../public/scroll.json";
 
 import "./ScrollAnimation.css";
 
@@ -32,8 +33,8 @@ export default function ScrollAnimation() {
     return (withScroll ? null :
       <button className="scroll-bottom" onClick={() => scrollTo({ top: 400, behavior: "smooth" })}>
         <LottieComponent
-              animationData={require("@/../public/scroll.json")}
-              className="lottie-component"
+            animationData={animationData}
+            className="lottie-component"
           />
       </button>
         
