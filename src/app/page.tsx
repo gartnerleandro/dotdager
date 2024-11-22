@@ -1,4 +1,5 @@
 import { Axe, Linkedin, Youtube, Github, TreePalm, Instagram } from 'lucide-react';
+import dynamic from 'next/dynamic';
 
 import Typewriter from '../components/Typewriter/Typewriter';
 import ScrollAnimation from '../components/ScrollAnimation/ScrollAnimation';
@@ -7,10 +8,16 @@ import Timeline from '../components/Timeline/Timeline';
 
 import "./page.css";
 
+const ThemeSwitcher = dynamic(
+  () => import('../components/ThemeSwitcher/ThemeSwitcher'),
+  { ssr: false }
+)
+
 export default function Home() {
   return (
     <div className="page">
       <main className="main">
+        <ThemeSwitcher />
         <section className="hero">
           <div className="presentation">
             <div className="profile-wrapper" data-glow>
