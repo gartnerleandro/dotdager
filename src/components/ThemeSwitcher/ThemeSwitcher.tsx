@@ -11,11 +11,12 @@ import "./ThemeSwitcher.css";
 const ThemeSwitcher = () => {
     const [mounted, setMounted] = useState(false);
     const { theme, setTheme } = useTheme();
-    usePointerGlow();
     
     useEffect(() => setMounted(true), []);
     
     if (!mounted) return null;
+
+    usePointerGlow();
 
     const handleThemeChange = () => {
         setTheme(theme === "dark" ? "light" : "dark");

@@ -8,7 +8,6 @@ import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher';
 
 import "./page.css";
 
-
 export default function Home() {
   return (
     <div className="page">
