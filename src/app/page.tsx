@@ -1,3 +1,5 @@
+"use client";
+
 import { Axe, Linkedin, Youtube, Github, TreePalm, Instagram } from 'lucide-react';
 
 import Typewriter from '../components/Typewriter/Typewriter';
