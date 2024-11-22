@@ -20,7 +20,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #f1d73f;
     transition: 0.4s;
     border-radius: 34px;
     display: flex;
@@ -56,7 +56,6 @@
 
   .light .sun-icon {
     transform: translateX(26px);
-    color: #FFee8C;
   }
   
   .hidden {
