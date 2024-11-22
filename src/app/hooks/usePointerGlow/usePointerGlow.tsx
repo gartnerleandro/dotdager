@@ -1,8 +1,15 @@
 "use client";
 import React from 'react';
 
+interface PointerGlowStatus {
+  x: string;
+  y: string;
+  xp: string;
+  yp: string;
+}
+
 export const usePointerGlow = () => {
-  const [status, setStatus] = React.useState(null);
+  const [status, setStatus] = React.useState<PointerGlowStatus | null>(null);
   React.useEffect(() => {
     function syncPointer({ x: pointerX, y: pointerY }: { x: number, y: number }): void {
       const x = pointerX.toFixed(2);
@@ -13,7 +20,6 @@ export const usePointerGlow = () => {
       document.documentElement.style.setProperty('--xp', xp);
       document.documentElement.style.setProperty('--y', y);
       document.documentElement.style.setProperty('--yp', yp);
-      // @ts-ignore
       setStatus({ x, y, xp, yp });
     }
     document.body.addEventListener('pointermove', syncPointer);
