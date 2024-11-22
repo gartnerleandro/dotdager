@@ -6,27 +6,27 @@ import "./ScrollToTop.css";
 
 export default function ScrollToTop() {
     const [withScroll, setWithScroll] = useState(false);
-
+    const [mounted, setMounted] = useState(false);
+    
     useEffect(() => {
-        const handleScroll = () => {
-          if (window.scrollY > 280) {
-            setWithScroll(true);
-          } else {
-            setWithScroll(false);
-          }
-        };
-    
-        if (typeof window !== "undefined") {
-          window.addEventListener('scroll', handleScroll);
+      setMounted(true);
+      const handleScroll = () => {
+        if (window.scrollY > 280) {
+          setWithScroll(true);
+        } else {
+          setWithScroll(false);
         }
-        
-        return () => {
-          if (typeof window !== "undefined") {
-            window.removeEventListener('scroll', handleScroll);
-          }
-        };
-      }, []);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
     
+    if (!mounted) return null;
+
     function handleScroll() {
       if (typeof window !== "undefined") {
         window.scrollTo({top: 0,  behavior: 'smooth'});

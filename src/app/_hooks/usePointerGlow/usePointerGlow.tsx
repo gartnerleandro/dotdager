@@ -18,23 +18,17 @@ export const usePointerGlow = () => {
       const xp = (pointerX / window.innerWidth).toFixed(2);
       const yp = (pointerY / window.innerHeight).toFixed(2);
 
-      if (typeof window !== "undefined") {
-        document.documentElement.style.setProperty('--x', x);
-        document.documentElement.style.setProperty('--xp', xp);
-        document.documentElement.style.setProperty('--y', y);
-        document.documentElement.style.setProperty('--yp', yp);
-      }
+      document.documentElement.style.setProperty('--x', x);
+      document.documentElement.style.setProperty('--xp', xp);
+      document.documentElement.style.setProperty('--y', y);
+      document.documentElement.style.setProperty('--yp', yp);
       
       setStatus({ x, y, xp, yp });
     }
 
-    if (typeof window !== "undefined") {
-      document.body.addEventListener('pointermove', syncPointer);
-    }
+    document.body.addEventListener('pointermove', syncPointer);
     return () => {
-      if (typeof window !== "undefined") {
-        document.body.removeEventListener('pointermove', syncPointer);
-      }
+      document.body.removeEventListener('pointermove', syncPointer);
     };
   }, []);
   return [status];
