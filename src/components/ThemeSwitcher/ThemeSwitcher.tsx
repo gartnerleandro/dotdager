@@ -11,8 +11,7 @@ import "./ThemeSwitcher.css";
 const ThemeSwitcher = () => {
     const [mounted, setMounted] = useState(false);
     const { theme, setTheme } = useTheme();
-    //@ts-ignore @ts-expect-error
-    const [status] = usePointerGlow();
+    usePointerGlow();
     
     useEffect(() => setMounted(true), []);
     
