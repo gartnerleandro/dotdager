@@ -1,0 +1,22 @@
+.typewriter {
+  display: inline;
+  font-size: 1.5rem;
+  color: var(--foreground);
+}
+
+.cursor {
+  display: inline-block;
+  width: 1px;
+  color: transparent;
+  background-color: transparent;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--foreground);
+  }
+}
