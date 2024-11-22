@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 
-import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 import "./globals.css";
 

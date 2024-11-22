@@ -1,10 +1,10 @@
 import { Axe, Linkedin, Youtube, Github, TreePalm, Instagram } from 'lucide-react';
 
-import Typewriter from '../components/Typewriter/Typewriter';
-import ScrollAnimation from '../components/ScrollAnimation/ScrollAnimation';
-import ProjectCard from '../components/ProjectCard/ProjectCard';
-import Timeline from '../components/Timeline/Timeline';
-import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher';
+import Typewriter from '@/components/Typewriter/Typewriter';
+import ScrollAnimation from '@/components/ScrollAnimation/ScrollAnimation';
+import ProjectCard from '@/components/ProjectCard/ProjectCard';
+import Timeline from '@/components/Timeline/Timeline';
+import ThemeSwitcher from '@/components/ThemeSwitcher/ThemeSwitcher';
 
 import "./page.css";
 
