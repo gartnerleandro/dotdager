@@ -2,7 +2,7 @@ import Lottie from "lottie-react";
 
 
 interface LottieComponentProps {
-    animationData: string;
+    animationData: unknown;
     loop?: boolean;
     autoplay?: boolean;
     className?: string;
