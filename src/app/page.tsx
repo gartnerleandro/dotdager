@@ -3,10 +3,11 @@ import { Axe, Linkedin, Youtube, Github, TreePalm, Instagram } from 'lucide-reac
 import Typewriter from './components/Typewriter/Typewriter';
 import ScrollAnimation from './components/ScrollAnimation/ScrollAnimation';
 import ProjectCard from './components/ProjectCard/ProjectCard';
-
-import "./page.css";
 import Timeline from './components/Timeline/Timeline';
 import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher';
+
+import "./page.css";
+
 
 export default function Home() {
   return (
