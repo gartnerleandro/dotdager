@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 
-import { usePointerGlow } from '../../hooks/usePointerGlow/usePointerGlow';
+import { usePointerGlow } from '../../_hooks/usePointerGlow/usePointerGlow';
 
 import "./ThemeSwitcher.css";
 

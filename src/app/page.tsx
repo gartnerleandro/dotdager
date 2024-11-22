@@ -1,10 +1,10 @@
 import { Axe, Linkedin, Youtube, Github, TreePalm, Instagram } from 'lucide-react';
 
-import Typewriter from '@/components/Typewriter/Typewriter';
-import ScrollAnimation from '@/components/ScrollAnimation/ScrollAnimation';
-import ProjectCard from '@/components/ProjectCard/ProjectCard';
-import Timeline from '@/components/Timeline/Timeline';
-import ThemeSwitcher from '@/components/ThemeSwitcher/ThemeSwitcher';
+import Typewriter from '@/app/_components/Typewriter/Typewriter';
+import ScrollAnimation from '@/app/_components/ScrollAnimation/ScrollAnimation';
+import ProjectCard from '@/app/_components/ProjectCard/ProjectCard';
+import Timeline from '@/app/_components/Timeline/Timeline';
+import ThemeSwitcher from '@/app/_components/ThemeSwitcher/ThemeSwitcher';
 
 import "./page.css";
 
@@ -131,7 +131,7 @@ export default function Home() {
             <a href="https://www.instagram.com/dager.32" className="instagram" title="instagram" target="_blank"><Instagram /></a>
           </li>
         </ul>
-        <p>© 2024 Dot Dager</p>
+        <p>© {new Date().getFullYear()} Dot Dager</p>
       </footer>
     </div>
   );

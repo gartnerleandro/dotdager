@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 
-import LottieComponent from "@/components/Lottie/Lottie";
+import LottieComponent from "@/app/_components/Lottie/Lottie";
 import animationData from "@/../public/scroll.json";
 
 import "./ScrollAnimation.css";
