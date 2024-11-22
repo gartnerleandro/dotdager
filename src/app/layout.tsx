@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
-import dynamic from 'next/dynamic'
+
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 import "./globals.css";
-
-const ScrollToTop = dynamic(
-  () => import('../components/ScrollToTop/ScrollToTop'),
-  { ssr: false }
-)
-
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",

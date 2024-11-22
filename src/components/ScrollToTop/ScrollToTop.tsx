@@ -16,16 +16,22 @@ export default function ScrollToTop() {
           }
         };
     
-        window.addEventListener('scroll', handleScroll);
-
+        if (typeof window !== "undefined") {
+          window.addEventListener('scroll', handleScroll);
+        }
+        
         return () => {
-          window.removeEventListener('scroll', handleScroll);
+          if (typeof window !== "undefined") {
+            window.removeEventListener('scroll', handleScroll);
+          }
         };
       }, []);
     
     function handleScroll() {
+      if (typeof window !== "undefined") {
         window.scrollTo({top: 0,  behavior: 'smooth'});
         setWithScroll(false);
+      }
     }
 
     return (<button className={withScroll ? "arrow-top" : "hidden"} onClick={handleScroll}><ArrowUp /></button>)
