@@ -131,7 +131,7 @@ export default function Home() {
             <a href="https://www.instagram.com/dager.32" className="instagram" title="instagram" target="_blank"><Instagram /></a>
           </li>
         </ul>
-        <p>© {new Date().getFullYear()} Dot Dager</p>
+        <p>© 2024 Dot Dager</p>
       </footer>
     </div>
   );
