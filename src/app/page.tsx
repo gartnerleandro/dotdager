@@ -1,12 +1,9 @@
-"use client";
-
 import { Axe, Linkedin, Youtube, Github, TreePalm, Instagram } from 'lucide-react';
 
 import Typewriter from '../components/Typewriter/Typewriter';
 import ScrollAnimation from '../components/ScrollAnimation/ScrollAnimation';
 import ProjectCard from '../components/ProjectCard/ProjectCard';
 import Timeline from '../components/Timeline/Timeline';
-import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher';
 
 import "./page.css";
 
@@ -14,7 +11,6 @@ export default function Home() {
   return (
     <div className="page">
       <main className="main">
-        <ThemeSwitcher />
         <section className="hero">
           <div className="presentation">
             <div className="profile-wrapper" data-glow>
