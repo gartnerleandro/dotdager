@@ -80,25 +80,25 @@ export default function Home() {
           <h3 className="technologies-title">Tecnologías utilizadas</h3>
           <ul className="technologies">
             <li data-glow>
-              <img src="/net.png" width="128" height="128" alt=".net" />
+              <img loading="lazy" src="/net.png" width="128" height="128" alt=".net" />
             </li>
             <li data-glow>
-              <img src="/aws.png" width="128" height="128" alt="aws" />
+              <img loading="lazy" src="/aws.png" width="128" height="128" alt="aws" />
             </li>
             <li data-glow>
-              <img src="/java.png" width="128" height="128" alt="java" />
+              <img loading="lazy" src="/java.png" width="128" height="128" alt="java" />
             </li>
             <li data-glow>
-              <img src="/mysql.png" width="128" height="128" alt="mysql" />
+              <img loading="lazy" src="/mysql.png" width="128" height="128" alt="mysql" />
             </li>
             <li data-glow>
-              <img src="/swift.png" width="128" height="128" alt="swift" />
+              <img loading="lazy" src="/swift.png" width="128" height="128" alt="swift" />
             </li>
             <li data-glow>
-              <img src="/winforms.png" width="128" height="128" alt="winforms" />
+              <img loading="lazy" src="/winforms.png" width="128" height="128" alt="winforms" />
             </li>
             <li data-glow>
-              <img src="/xamarin.png" width="128" height="128" alt="xamarin" />
+              <img loading="lazy" src="/xamarin.png" width="128" height="128" alt="xamarin" />
             </li>
           </ul>
         </section>
