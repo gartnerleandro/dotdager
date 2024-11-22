@@ -9,7 +9,7 @@ interface PointerGlowStatus {
 }
 
 export const usePointerGlow = () => {
-  const [_, setStatus] = useState<PointerGlowStatus | null>(null);
+  const [status, setStatus] = useState<PointerGlowStatus | null>(null);
 
   useEffect(() => {
     function syncPointer({ x: pointerX, y: pointerY }: { x: number, y: number }): void {
@@ -28,4 +28,5 @@ export const usePointerGlow = () => {
       document.body.removeEventListener('pointermove', syncPointer);
     };
   }, []);
+  return [status];
 };
