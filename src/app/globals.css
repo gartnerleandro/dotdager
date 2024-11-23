@@ -8,7 +8,7 @@
   --backup-border: var(--backdrop);
   --size: 200;
   --shadow: rgba(50, 53, 56, 0.4);
-  --swiper-pagination-color: #826293;
+  --swiper-pagination-color: #1f1f1f;
   --background-light: hsl(0, 0%, 100%);
 }
 
@@ -23,7 +23,8 @@
     --backup-border: var(--backdrop);
     --size: 200;
     --shadow: rgba(149, 157, 165, 0.4);
-    --swiper-pagination-color: #826293;
+    --swiper-pagination-color: #fefefe;
+    --swiper-pagination-bullet-inactive-color: #8c8c8c;
     --background-light: hsl(233, 8%, 19%);
   }
 }

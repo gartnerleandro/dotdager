@@ -18,7 +18,7 @@
     border-radius: 8px;
     width: 60%;
     height: 80%;
-    background-color: var(--background-light);
+    background-color: var(--backdrop, transparent);
     background-image: url("/dager.webp");
     background-repeat: no-repeat;
     background-position: bottom right;
