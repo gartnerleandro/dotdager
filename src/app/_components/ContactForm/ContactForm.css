@@ -1,62 +1,65 @@
 form.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
 }
 
-input:not([type="submit"]), textarea {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid var(--shadow);
-    padding: 8px;
-    outline: none;
-    background-color: var(--input);
-    transition: border-bottom-color linear .3s;
+input:not([type="submit"]),
+textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--shadow);
+  padding: 8px;
+  outline: none;
+  background-color: var(--input);
+  transition: border-bottom-color linear 0.3s;
 }
 
-input:not([type="submit"]):focus, textarea:focus {
-    border-bottom-color: var(--foreground);
+input:not([type="submit"]):focus,
+textarea:focus {
+  border-bottom-color: var(--foreground);
 }
 
-input:not([type="submit"]).error, textarea.error {
-    border-bottom-color: rgb(237, 80, 80);
+input:not([type="submit"]).error,
+textarea.error {
+  border-bottom-color: rgb(237, 80, 80);
 }
 
 textarea {
-    resize: none;
-    height: 80px;
+  resize: none;
+  height: 80px;
 }
 
 input[type="submit"] {
-    padding: 5px 20px;
-    width: fit-content;
-    cursor: pointer;
-    outline: none;
-    box-shadow: none;
-    border: 1px solid var(--text);
-    border-radius: 8px;
-    background-color: var(--background);
+  padding: 5px 20px;
+  width: fit-content;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid var(--text);
+  border-radius: 8px;
+  background-color: var(--background);
 }
 
 form p {
-    color: rgb(237, 80, 80);
-    font-size: small;
+  color: rgb(237, 80, 80);
+  font-size: small;
 }
 
 .email-sent h4 {
-    font-size: xx-large;
-    margin-block-end: 10px;
+  font-size: xx-large;
+  margin-block-end: 10px;
 }
 
 .email-sent img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 @media (max-width: 41.9375rem) {
-    form.contact {
-      width: 100%;
-    }
+  form.contact {
+    width: 100%;
   }
+}

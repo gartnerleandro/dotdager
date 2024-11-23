@@ -1,59 +1,59 @@
 .project-card {
-    position: relative;
-    padding-inline: 16px;
-    padding-block: 16px;
-    border-radius: 8px;
-    transition: border-color 0.3s ease-in-out;
+  position: relative;
+  padding-inline: 16px;
+  padding-block: 16px;
+  border-radius: 8px;
+  transition: border-color 0.3s ease-in-out;
 }
 
 article.project-card:first-of-type {
-	--base: 80;
-	--spread: 500;
-	--outer: 1;
+  --base: 80;
+  --spread: 500;
+  --outer: 1;
 }
 article.project-card:last-of-type {
-	--outer: 1;
-	--base: 220;
-	--spread: 200;
+  --outer: 1;
+  --base: 220;
+  --spread: 200;
 }
 
 .project-card a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .card-title {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    margin-block-end: 8px;
-    flex: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  margin-block-end: 8px;
+  flex: 0;
 }
 
 .card-description {
-    flex: 1;
-    margin-block-end: 8px;
+  flex: 1;
+  margin-block-end: 8px;
 }
 
 .card-languages {
-    flex: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
+  flex: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
 }
 
 .language {
-    font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .card-languages span.dot {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin-inline-end: 4px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-inline-end: 4px;
 }

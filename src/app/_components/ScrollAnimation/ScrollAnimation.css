@@ -1,13 +1,13 @@
 .lottie-component {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    max-inline-size: 60px;
-    margin-inline: auto;
-    margin-block: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-inline-size: 60px;
+  margin-inline: auto;
+  margin-block: 0;
 }
 
 button.scroll-bottom {
-    display: contents;
+  display: contents;
 }

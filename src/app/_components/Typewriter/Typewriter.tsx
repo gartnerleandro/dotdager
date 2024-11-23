@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import './Typewriter.css';
+import "./Typewriter.css";
 
 interface TypewriterProps {
   strings: string[];
@@ -21,7 +21,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
   autoStart = true,
   loop = true,
 }) => {
-  const [displayedText, setDisplayedText] = useState('');
+  const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [index, setIndex] = useState(0);
   const [stringIndex, setStringIndex] = useState(0);

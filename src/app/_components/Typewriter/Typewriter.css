@@ -13,7 +13,8 @@
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {

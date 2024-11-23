@@ -5,19 +5,18 @@ import dynamic from "next/dynamic";
 
 const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 
-
 interface LottieComponentProps {
-    animationData: unknown;
-    loop?: boolean;
-    autoplay?: boolean;
-    className?: string;
-  }
+  animationData: unknown;
+  loop?: boolean;
+  autoplay?: boolean;
+  className?: string;
+}
 
 const LottieComponent: React.FC<LottieComponentProps> = ({
-    animationData,
-    loop = true,
-    autoplay = true,
-    className = ""
+  animationData,
+  loop = true,
+  autoplay = true,
+  className = "",
 }) => {
   return (
     <DynamicLottie
@@ -27,6 +26,6 @@ const LottieComponent: React.FC<LottieComponentProps> = ({
       autoplay={autoplay}
     />
   );
-}
+};
 
 export default LottieComponent;

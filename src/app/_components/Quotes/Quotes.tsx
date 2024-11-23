@@ -71,7 +71,7 @@ const Quotes: React.FC = () => {
         </div>
       </SwiperSlide>
     </Swiper>
-  )
-}
+  );
+};
 
 export default Quotes;

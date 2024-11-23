@@ -1,63 +1,63 @@
 .theme-switcher {
-    position: fixed;
-    top: 40px;
-    right: 40px;
-    width: 60px;
-    height: 34px;
-    z-index: 1000;
-  }
-  
-  .theme-switcher-checkbox {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .theme-switcher-label {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #f1d73f;
-    transition: 0.4s;
-    border-radius: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5px;
-  }
-  
-  .theme-switcher-checkbox:checked + .theme-switcher-label {
-    background-color: #2196F3;
-  }
-  
-  .theme-switcher-switch {
-    position: absolute;
-    height: 26px;
-    width: 26px;
-    background-color: white;
-    border-radius: 50%;
-    transition: 0.4s;
-    left: 4px;
-    bottom: 4px;
-  }
-  
-  .theme-switcher-checkbox:checked + .theme-switcher-label .theme-switcher-switch {
-    transform: translateX(26px);
-  }
-  
-  .icon {
-    width: 20px;
-    height: 20px;
-    color: white;
-  }
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 60px;
+  height: 34px;
+  z-index: 1000;
+}
 
-  .light .sun-icon {
-    transform: translateX(26px);
-  }
-  
-  .hidden {
-    display: none;
-  }
+.theme-switcher-checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-switcher-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f1d73f;
+  transition: 0.4s;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.theme-switcher-checkbox:checked + .theme-switcher-label {
+  background-color: #2196f3;
+}
+
+.theme-switcher-switch {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+  left: 4px;
+  bottom: 4px;
+}
+
+.theme-switcher-checkbox:checked + .theme-switcher-label .theme-switcher-switch {
+  transform: translateX(26px);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.light .sun-icon {
+  transform: translateX(26px);
+}
+
+.hidden {
+  display: none;
+}
