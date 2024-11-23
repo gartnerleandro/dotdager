@@ -5,6 +5,7 @@ import ScrollAnimation from '@/app/_components/ScrollAnimation/ScrollAnimation';
 import ProjectCard from '@/app/_components/ProjectCard/ProjectCard';
 import Timeline from '@/app/_components/Timeline/Timeline';
 import ThemeSwitcher from '@/app/_components/ThemeSwitcher/ThemeSwitcher';
+import Quotes from '@/app/_components/Quotes/Quotes';
 
 import "./page.css";
 
@@ -101,6 +102,10 @@ export default function Home() {
               <img loading="lazy" src="/xamarin.webp" width="128" height="128" alt="xamarin" />
             </li>
           </ul>
+        </section>
+
+        <section id="quotes">
+          <Quotes />
         </section>
 
         <section id="about">

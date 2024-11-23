@@ -145,13 +145,19 @@ ul.technologies::-webkit-scrollbar-thumb {
   border: 1px solid var(--text);
 }
 
+#quotes {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  padding-inline: 0;
+}
+
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid var(--shadow);
 }
 
 footer ul {
