@@ -1,12 +1,12 @@
 "use client";
 import { useRef, useState } from 'react';
-import Lottie from "lottie-react";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import animationData from '@/../public/menu.json';
 
 import './Navbar.css';
 
 const Navbar = () => {
-  const menuButton = useRef(null);
+  const menuButton = useRef<LottieRefCurrentProps>(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -14,11 +14,11 @@ const Navbar = () => {
     
     if (menuButton?.current) {
         if (isOpen) {
-            (menuButton.current as any).setSpeed(3);
-            (menuButton.current as any).playSegments([85, 140]);
+            menuButton.current.setSpeed(3);
+            menuButton.current.playSegments([85, 140]);
         } else {
-            (menuButton.current as any).setSpeed(3);
-            (menuButton.current as any).playSegments([0, 85]);
+            menuButton.current.setSpeed(3);
+            menuButton.current.playSegments([0, 85]);
         }
     }
   };
