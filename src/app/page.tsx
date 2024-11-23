@@ -1,29 +1,17 @@
-"use client";
-import { useEffect, useState } from "react";
 import { Axe, Linkedin, Youtube, Github, TreePalm, Instagram } from 'lucide-react';
 
-import Typewriter from '@/app/_components/Typewriter/Typewriter';
-import ScrollAnimation from '@/app/_components/ScrollAnimation/ScrollAnimation';
-import ProjectCard from '@/app/_components/ProjectCard/ProjectCard';
-import Timeline from '@/app/_components/Timeline/Timeline';
-import ThemeSwitcher from '@/app/_components/ThemeSwitcher/ThemeSwitcher';
-import Quotes from '@/app/_components/Quotes/Quotes';
-import ContactForm from '@/app/_components/ContactForm/ContactForm';
-import Navbar from '@/app/_components/Navbar/Navbar';
+import Typewriter from "@/app/_components/Typewriter/Typewriter";
+import ScrollAnimation from "@/app/_components/ScrollAnimation/ScrollAnimation";
+import ProjectCard from "@/app/_components/ProjectCard/ProjectCard";
+import Timeline from "@/app/_components/Timeline/Timeline";
+import ThemeSwitcher from "@/app/_components/ThemeSwitcher/ThemeSwitcher";
+import Quotes from "@/app/_components/Quotes/Quotes";
+import ContactForm from "@/app/_components/ContactForm/ContactForm";
+import Navbar from "@/app/_components/Navbar/Navbar";
 
 import "./page.css";
 
 export default function Home() {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) {
-    return null;
-  }
-
   return (
     <div className="page">
       <main className="main">
