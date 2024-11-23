@@ -17,7 +17,7 @@ const Quotes: React.FC = () => {
       pagination
       keyboard
       loop
-      // autoplay
+      autoplay
       modules={[Keyboard, Autoplay, A11y, Pagination]}
       spaceBetween={50}
       slidesPerView={1}
@@ -33,7 +33,7 @@ const Quotes: React.FC = () => {
       <SwiperSlide>
         <div className="slide-quote-wrapper">
           <div className="slide-quote">
-            <q>Me encantan los pepinos</q>
+            <q>No lo puedo negar, me gustan mucho... y los libros también</q>
             <p>Dot dager</p>
           </div>
         </div>
@@ -41,7 +41,7 @@ const Quotes: React.FC = () => {
       <SwiperSlide>
         <div className="slide-quote-wrapper">
           <div className="slide-quote">
-            <q>Me encantan los pepinos</q>
+            <q>Puto el que lee</q>
             <p>Dot dager</p>
           </div>
         </div>
@@ -49,7 +49,23 @@ const Quotes: React.FC = () => {
       <SwiperSlide>
         <div className="slide-quote-wrapper">
           <div className="slide-quote">
-            <q>Me encantan los pepinos</q>
+            <q>¿Ya te dije que me encantan los pepinos?</q>
+            <p>Dot dager</p>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="slide-quote-wrapper">
+          <div className="slide-quote">
+            <q>No es que seas tonto, es que te faltan pre-requisitos</q>
+            <p>Dot dager</p>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="slide-quote-wrapper">
+          <div className="slide-quote">
+            <q>Hoy no voy a satisfacer a absolutamente nadie</q>
             <p>Dot dager</p>
           </div>
         </div>

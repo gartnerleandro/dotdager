@@ -36,6 +36,8 @@
 
 .slide-quote q {
     margin-block-end: 10px;
+    max-width: 70%;
+    text-align: center;
 }
 
 @media (max-width: 41.9375rem) {
