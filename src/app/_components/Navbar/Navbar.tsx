@@ -31,7 +31,7 @@ const Navbar = () => {
   if (!mounted) return null;
 
   const scrollToSection = (sectionId: string) => {
-    if (typeof window !== "undefined") {
+    if (typeof document !== "undefined") {
         toggleMenu();
         const element = document.getElementById(sectionId);
         element?.scrollIntoView({ behavior: 'smooth' });
