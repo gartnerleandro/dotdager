@@ -1,5 +1,13 @@
 import { Axe, Linkedin, Youtube, Github, TreePalm, Instagram } from 'lucide-react';
 
+
+import ProjectCard from '@/app/_components/ProjectCard/ProjectCard';
+import Timeline from '@/app/_components/Timeline/Timeline';
+
+import Quotes from '@/app/_components/Quotes/Quotes';
+import ContactForm from '@/app/_components/ContactForm/ContactForm';
+
+
 import "./page.css";
 
 export default function Home() {
@@ -29,7 +37,42 @@ export default function Home() {
           <h2>Proyectos</h2>
 
           <div className="projects-list">
-            
+            <ProjectCard
+              title="WorldHardestGame-vs-AI"
+              description="The World's Hardest Game in Unity... and a genetic algorithm to beat it."
+              languages={[{name: "ShaderLab", color: "#222c37"}]}
+              url="https://github.com/MarianoVilla/WorldHardestGame-vs-AI"
+            />
+            <ProjectCard
+              title="HTTP-Server"
+              description="HTTP server from scratch, using C#!"
+              languages={[{name: "C#", color: "#178600"}]}
+              url="https://github.com/MarianoVilla/HTTP-Server"
+            />
+            <ProjectCard
+              title="DNS-Server"
+              description="DNS server from scratch, using C#!"
+              languages={[{name: "C#", color: "#178600"}]}
+              url="https://github.com/MarianoVilla/DNS-Server"
+            />
+            <ProjectCard
+              title="AToZChallenge"
+              description="Writing a four-component full-stack app using silly stacks."
+              languages={[{name: "TypeScript", color: "#3178c6"}]}
+              url="https://github.com/MarianoVilla/AToZChallenge"
+            />
+            <ProjectCard
+              title="ChauMundo"
+              description="Hello World, but it's unnecessarily complex!"
+              languages={[{name: "C#", color: "#178600"}]}
+              url="https://github.com/MarianoVilla/ChauMundo"
+            />
+            <ProjectCard
+              title="Git-In-CSharp"
+              description="A (bare-bones) implementation of Git, using C#!"
+              languages={[{name: "C#", color: "#178600"}]}
+              url="https://github.com/MarianoVilla/Git-In-CSharp"
+            />
           </div>
 
           <h3 className="technologies-title">Tecnologías utilizadas</h3>
@@ -59,7 +102,7 @@ export default function Home() {
         </section>
 
         <section id="quotes">
-          
+          <Quotes />
         </section>
 
         <section id="about">
@@ -68,14 +111,14 @@ export default function Home() {
             Soy un desarrollador de software con más de 19 años de experiencia en la creación de aplicaciones web y móviles. Esta es mi trayectoria profesional:
           </p>
           <br />
-          
+          <Timeline />
         </section>
 
         <section id="contact">
           <h2>Contacto</h2>
           <div>
             <img loading="lazy" src="/contacto.webp" width="300" height="400" alt="contactame" />
-            
+            <ContactForm />
           </div>
         </section>
       </main>
