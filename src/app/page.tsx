@@ -4,10 +4,8 @@ import Typewriter from '@/app/_components/Typewriter/Typewriter';
 import ScrollAnimation from '@/app/_components/ScrollAnimation/ScrollAnimation';
 import ProjectCard from '@/app/_components/ProjectCard/ProjectCard';
 import Timeline from '@/app/_components/Timeline/Timeline';
-
 import Quotes from '@/app/_components/Quotes/Quotes';
 import ContactForm from '@/app/_components/ContactForm/ContactForm';
-import Navbar from '@/app/_components/Navbar/Navbar';
 
 import "./page.css";
 
@@ -15,8 +13,6 @@ export default function Home() {
   return (
     <div className="page">
       <main className="main">
-        
-        <Navbar />
         <section className="hero">
           <div className="presentation">
             <div className="profile-wrapper" data-glow>
