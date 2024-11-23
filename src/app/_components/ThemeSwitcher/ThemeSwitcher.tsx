@@ -28,7 +28,8 @@ const ThemeSwitcher = () => {
                 className="theme-switcher-checkbox" 
                 id="theme-switcher-checkbox" 
                 onChange={handleThemeChange} 
-                checked={theme === "dark"} 
+                checked={theme === "dark"}
+                defaultChecked
             />
             <label className="theme-switcher-label" htmlFor="theme-switcher-checkbox">
                 <Sun className={`icon sun-icon ${theme === "dark" ? "hidden" : ""}`} />
