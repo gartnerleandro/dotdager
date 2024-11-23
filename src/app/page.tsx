@@ -1,9 +1,10 @@
 import { Axe, Linkedin, Youtube, Github, TreePalm, Instagram } from 'lucide-react';
 
-
+import Typewriter from '@/app/_components/Typewriter/Typewriter';
+import ScrollAnimation from '@/app/_components/ScrollAnimation/ScrollAnimation';
 import ProjectCard from '@/app/_components/ProjectCard/ProjectCard';
 import Timeline from '@/app/_components/Timeline/Timeline';
-import ThemeSwitcher from '@/app/_components/ThemeSwitcher/ThemeSwitcher';
+
 import Quotes from '@/app/_components/Quotes/Quotes';
 import ContactForm from '@/app/_components/ContactForm/ContactForm';
 import Navbar from '@/app/_components/Navbar/Navbar';
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <div className="page">
       <main className="main">
-        <ThemeSwitcher />
+        
         <Navbar />
         <section className="hero">
           <div className="presentation">
@@ -23,14 +24,18 @@ export default function Home() {
             </div>
             
             <h2>Hola, soy Dot Dager</h2>
-            
+            <Typewriter
+              strings={["Full-Stack/Lead Developer.", "Creador de contenido.", "Amante de la filosofía.", "Guitarrista.", "Catador de pepinos.", "Campeón del lumberjack."]}
+              autoStart={true}
+              loop={true}
+            />
             <a data-glow title="lumberjack" href="https://www.tbot.xyz/lumber/" target="_blank" className="fake-cv">
               <Axe />
               Consultar CV
             </a>
           </div>
           
-          
+          <ScrollAnimation />
           
         </section>
 
