@@ -1,0 +1,48 @@
+form.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+}
+
+input:not([type="submit"]), textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 8px;
+}
+
+input:not([type="submit"]).error, textarea.error {
+    border-bottom-color: rgb(237, 80, 80);
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    width: fit-content;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--text);
+    border-radius: 8px;
+    background-color: var(--background);
+}
+
+form p {
+    color: rgb(237, 80, 80);
+    font-size: small;
+}
+
+.email-sent h4 {
+    font-size: xx-large;
+    margin-block-end: 10px;
+}
+
+.email-sent img {
+    object-fit: contain;
+}

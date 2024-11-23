@@ -6,6 +6,7 @@ import ProjectCard from '@/app/_components/ProjectCard/ProjectCard';
 import Timeline from '@/app/_components/Timeline/Timeline';
 import ThemeSwitcher from '@/app/_components/ThemeSwitcher/ThemeSwitcher';
 import Quotes from '@/app/_components/Quotes/Quotes';
+import ContactForm from '@/app/_components/ContactForm/ContactForm';
 
 import "./page.css";
 
@@ -115,6 +116,11 @@ export default function Home() {
           </p>
           <br />
           <Timeline />
+        </section>
+
+        <section id="contact">
+          <img loading="lazy" src="/contacto.webp" width="600" height="400" alt="contactame" />
+          <ContactForm />
         </section>
       </main>
       <footer>
