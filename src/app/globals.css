@@ -24,7 +24,7 @@
     --border: 3;
     --backup-border: var(--backdrop);
     --size: 200;
-    --shadow: rgba(149, 157, 165, 0.4);
+    --shadow: rgba(87, 85, 85, 0.4);
     --swiper-pagination-color: #fefefe;
     --swiper-pagination-bullet-inactive-color: #8c8c8c;
     --background-light: hsl(233, 8%, 19%);
@@ -43,6 +43,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html:has(dialog[open]) {
+  overflow: clip;
 }
 
 * {

@@ -8,6 +8,7 @@ import ThemeSwitcher from "@/app/_components/ThemeSwitcher/ThemeSwitcher";
 import Quotes from "@/app/_components/Quotes/Quotes";
 import ContactForm from "@/app/_components/ContactForm/ContactForm";
 import Navbar from "@/app/_components/Navbar/Navbar";
+import PromoModal from "@/app/_components/PromoModal/PromoModal";
 
 import "./page.css";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="main">
         <ThemeSwitcher />
         <Navbar />
+        <PromoModal />
         <section className="hero">
           <div className="presentation">
             <div className="profile-wrapper" data-glow>

@@ -1,0 +1,49 @@
+dialog.promo-modal {
+  margin: auto auto;
+  padding: 30px 10px 0 10px;
+  border: none;
+  background: var(--background);
+  border-radius: 8px;
+  box-shadow: 3.0px 6.1px 6.1px var(--shadow);
+  max-inline-size: 640px;
+}
+
+button.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 8px 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+dialog.promo-modal h4 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-block-end: 20px;
+}
+
+div.promo-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+div.promo-body img {
+  object-fit: contain;
+  object-position: left;
+}
+
+dialog.promo-modal p.promo-sponsor {
+  font-size: 0.7rem;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
