@@ -46,3 +46,9 @@ form p {
 .email-sent img {
     object-fit: contain;
 }
+
+@media (max-width: 41.9375rem) {
+    form.contact {
+      width: 100%;
+    }
+  }
