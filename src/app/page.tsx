@@ -3,10 +3,10 @@ import { Axe, Linkedin, Youtube, Github, TreePalm, Instagram } from 'lucide-reac
 
 import ProjectCard from '@/app/_components/ProjectCard/ProjectCard';
 import Timeline from '@/app/_components/Timeline/Timeline';
-
+import ThemeSwitcher from '@/app/_components/ThemeSwitcher/ThemeSwitcher';
 import Quotes from '@/app/_components/Quotes/Quotes';
 import ContactForm from '@/app/_components/ContactForm/ContactForm';
-
+import Navbar from '@/app/_components/Navbar/Navbar';
 
 import "./page.css";
 
@@ -14,7 +14,8 @@ export default function Home() {
   return (
     <div className="page">
       <main className="main">
-
+        <ThemeSwitcher />
+        <Navbar />
         <section className="hero">
           <div className="presentation">
             <div className="profile-wrapper" data-glow>
