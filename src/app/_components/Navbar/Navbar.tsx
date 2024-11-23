@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import animationData from '@/../public/menu.json';
 
@@ -8,6 +8,11 @@ import './Navbar.css';
 const Navbar = () => {
   const menuButton = useRef<LottieRefCurrentProps>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -23,10 +28,14 @@ const Navbar = () => {
     }
   };
 
+  if (!mounted) return null;
+
   const scrollToSection = (sectionId: string) => {
-    toggleMenu();
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    if (typeof window !== "undefined") {
+        toggleMenu();
+        const element = document.getElementById(sectionId);
+        element?.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
