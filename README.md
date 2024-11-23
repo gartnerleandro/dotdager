@@ -9,10 +9,10 @@ Check out the live demo: [DotDager Landing Page](https://dotdager.dev/)
 
 ## 📸 Preview
 
-![Light Theme]()
+![Light Theme](https://github.com/user-attachments/assets/1af221e1-0ace-49e3-85a9-ad92585ed1c5)
 _Light Theme Preview_
 
-![Dark Theme]()
+![Dark Theme](https://github.com/user-attachments/assets/c06d0549-6273-4e8f-81da-255de625ac43)
 _Dark Theme Preview_
 
 ## About The Project
