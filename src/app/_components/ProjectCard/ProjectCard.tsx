@@ -1,5 +1,3 @@
-"use client";
-
 import { BookMarked } from "lucide-react";
 
 import "./ProjectCard.css";
@@ -22,7 +20,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     languages,
     url,
 }) => {
-
     return (
         <article className="project-card" data-glow>
             <a href={url} title={title} target="_blank">
