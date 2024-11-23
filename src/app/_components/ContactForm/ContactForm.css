@@ -10,7 +10,15 @@ input:not([type="submit"]), textarea {
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: 1px solid var(--shadow);
     padding: 8px;
+    outline: none;
+    background-color: var(--input);
+    transition: border-bottom-color linear .3s;
+}
+
+input:not([type="submit"]):focus, textarea:focus {
+    border-bottom-color: var(--foreground);
 }
 
 input:not([type="submit"]).error, textarea.error {
@@ -23,7 +31,7 @@ textarea {
 }
 
 input[type="submit"] {
-    padding: 10px;
+    padding: 5px 20px;
     width: fit-content;
     cursor: pointer;
     outline: none;

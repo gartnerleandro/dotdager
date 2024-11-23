@@ -2,6 +2,7 @@
   --background: #fefefe;
   --foreground: #826293;
   --text: #1f1f1f;
+  --input: rgba(224, 224,224, 0.5);
   --backdrop: hsl(0 0% 60% / 0.12);
   --radius: 8;
   --border: 3;
@@ -17,6 +18,7 @@
     --background: #1f1f1f;
     --foreground: #826293;
     --text: #fefefe;
+    --input: rgba(61, 61, 61, 0.5);
     --backdrop: hsl(0 0% 60% / 0.12);
     --radius: 8;
     --border: 3;

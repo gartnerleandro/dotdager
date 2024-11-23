@@ -53,7 +53,7 @@ const ContactForm: React.FC = () => {
             <textarea {...register("message")} placeholder="Contame qué te pica *" className={errors?.message ? "error" : ""} />
             {errors?.message && <p>{errors.message.message}</p>}
 
-            <input type="submit" />
+            <input type="submit" value="Enviar" />
         </form>
     );
 }
