@@ -20,6 +20,10 @@ main {
   padding-inline: 20px;
 }
 
+.light .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('/hero.webp');
+}
+
 .profile-wrapper {
   width: 128px;
   height: 128px;
