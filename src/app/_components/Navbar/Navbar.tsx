@@ -14,15 +14,11 @@ const Navbar = () => {
     
     if (menuButton?.current) {
         if (isOpen) {
-            //@ts-expect-error
-            menuButton.current?.setSpeed(3);
-            //@ts-expect-error
-            menuButton.current?.playSegments([85, 140]);
+            (menuButton.current as any).setSpeed(3);
+            (menuButton.current as any).playSegments([85, 140]);
         } else {
-            //@ts-expect-error
-            menuButton.current?.setSpeed(3);
-            //@ts-expect-error
-            menuButton.current?.playSegments([0, 85]);
+            (menuButton.current as any).setSpeed(3);
+            (menuButton.current as any).playSegments([0, 85]);
         }
     }
   };
