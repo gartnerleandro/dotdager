@@ -36,7 +36,7 @@ export default function ScrollAnimation() {
     if (!mounted) return null;
 
     const scrollToTop = () => {
-      if (typeof window !== "undefined") {
+      if (typeof document !== "undefined") {
         scrollTo({ top: 400, behavior: "smooth" })
       }
     }
@@ -44,9 +44,9 @@ export default function ScrollAnimation() {
     return (withScroll ? null :
       <button className="scroll-bottom" onClick={scrollToTop}>
         <LottieComponent
-            animationData={animationData}
-            className="lottie-component"
-          />
+          animationData={animationData}
+          className="lottie-component"
+        />
       </button>
     );
 }
