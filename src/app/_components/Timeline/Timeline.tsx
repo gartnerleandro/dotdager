@@ -1,3 +1,4 @@
+"use client";
 import TimelineItem from "./TimelineItem";
 
 enum TimelineItemType {

@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { ThemeProvider } from "next-themes";
+
+import ScrollToTop from "@/app/_components/ScrollToTop/ScrollToTop";
 
 import "./globals.css";
 
@@ -27,7 +30,10 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <ThemeProvider attribute="class">
           {children}
+          <ScrollToTop />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,3 +1,4 @@
+"use client";
 import { BriefcaseBusiness, BookCheck } from 'lucide-react';
 
 import "./Timeline.css";
