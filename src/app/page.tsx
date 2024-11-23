@@ -1,7 +1,7 @@
 import { Axe, Linkedin, Youtube, Github, TreePalm, Instagram } from 'lucide-react';
 
 import Typewriter from "@/app/_components/Typewriter/Typewriter";
-// import ScrollAnimation from "@/app/_components/ScrollAnimation/ScrollAnimation";
+import ScrollAnimation from "@/app/_components/ScrollAnimation/ScrollAnimation";
 import ProjectCard from "@/app/_components/ProjectCard/ProjectCard";
 import Timeline from "@/app/_components/Timeline/Timeline";
 import ThemeSwitcher from "@/app/_components/ThemeSwitcher/ThemeSwitcher";
@@ -35,7 +35,7 @@ export default function Home() {
             </a>
           </div>
           
-          {/* <ScrollAnimation /> */}
+          <ScrollAnimation />
           
         </section>
 
