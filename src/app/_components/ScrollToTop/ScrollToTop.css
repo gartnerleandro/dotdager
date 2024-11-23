@@ -1,7 +1,11 @@
 .arrow-top {
     position: fixed;
     bottom: 70px;
+    padding: 5px;
     right: 20px;
     z-index: 1000;
     cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid var(--text);
+    background-color: var(--background-light);
 }
