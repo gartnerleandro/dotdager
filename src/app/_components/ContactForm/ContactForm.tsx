@@ -26,8 +26,10 @@ const ContactForm: React.FC = () => {
         formState: { errors },
       } = useForm<FormValues>({ resolver: zodResolver(schema) });
     const onSubmit = handleSubmit(() => {
-        sessionStorage.setItem("emailSent", "true");
-        setEmailSent("true");
+        if (typeof window !== "undefined") {
+            sessionStorage.setItem("emailSent", "true");
+            setEmailSent("true");
+        }
     });
 
     useEffect(() => {
