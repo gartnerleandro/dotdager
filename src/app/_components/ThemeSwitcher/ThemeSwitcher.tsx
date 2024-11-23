@@ -33,8 +33,6 @@ const ThemeSwitcher = () => {
     setTheme(theme === ThemeOptions.DARK ? ThemeOptions.LIGHT : ThemeOptions.DARK);
   };
 
-  console.log({ theme });
-
   return (
     <div className="theme-switcher">
       <input
