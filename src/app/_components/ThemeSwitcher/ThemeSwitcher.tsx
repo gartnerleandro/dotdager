@@ -8,18 +8,32 @@ import { usePointerGlow } from '../../_hooks/usePointerGlow/usePointerGlow';
 
 import "./ThemeSwitcher.css";
 
+enum ThemeOptions {
+    LIGHT = "light",
+    DARK = "dark",
+    SYSTEM = "system"
+}
+
 const ThemeSwitcher = () => {
     const [mounted, setMounted] = useState(false);
     const { theme, setTheme } = useTheme();
     usePointerGlow();
     
-    useEffect(() => setMounted(true), []);
+    useEffect(() => {
+        setMounted(true);
+
+        if (theme === ThemeOptions.SYSTEM) {
+            setTheme(ThemeOptions.DARK);
+        }
+    }, []);
     
     if (!mounted) return null;
 
     const handleThemeChange = () => {
-        setTheme(theme === "dark" ? "light" : "dark");
+        setTheme(theme === ThemeOptions.DARK ? ThemeOptions.LIGHT : ThemeOptions.DARK);
     };
+
+    console.log({theme});
     
     return (
         <div className="theme-switcher">
@@ -28,12 +42,11 @@ const ThemeSwitcher = () => {
                 className="theme-switcher-checkbox" 
                 id="theme-switcher-checkbox" 
                 onChange={handleThemeChange} 
-                checked={theme === "dark"}
-                defaultChecked
+                checked={theme === ThemeOptions.DARK || theme === ThemeOptions.SYSTEM}
             />
             <label className="theme-switcher-label" htmlFor="theme-switcher-checkbox">
-                <Sun className={`icon sun-icon ${theme === "dark" ? "hidden" : ""}`} />
-                <Moon className={`icon moon-icon ${theme === "dark" ? "" : "hidden"}`} />
+                <Sun className={`icon sun-icon ${theme === ThemeOptions.DARK ? "hidden" : ""}`} />
+                <Moon className={`icon moon-icon ${theme === ThemeOptions.DARK ? "" : "hidden"}`} />
                 <span className="theme-switcher-switch" />
             </label>
         </div>
