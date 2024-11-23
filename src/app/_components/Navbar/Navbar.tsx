@@ -1,7 +1,11 @@
 "use client";
 import { useRef, useEffect, useState } from 'react';
-import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import dynamic from "next/dynamic";
+import { LottieRefCurrentProps } from "lottie-react";
+
 import animationData from '@/../public/menu.json';
+
+const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 import './Navbar.css';
 
@@ -42,7 +46,7 @@ const Navbar = () => {
     <nav className={`navbar ${isOpen ? 'active' : ''}`}>
       <div className="backdrop" onClick={toggleMenu}></div>
       <button className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-        <Lottie
+        <DynamicLottie
             loop={false}
             autoPlay={false}
             initialSegment={[0, 1]}
