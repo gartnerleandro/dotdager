@@ -62,6 +62,11 @@ const Navbar = () => {
           <li onClick={() => scrollToSection("quotes")}>Citas</li>
           <li onClick={() => scrollToSection("about")}>Sobre mí</li>
           <li onClick={() => scrollToSection("contact")}>Contacto</li>
+          <li>
+            <a href="https://github.com/gartnerleandro/dotdager" target="_blank">
+              Repositorio
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
